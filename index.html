@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobika K - AI & Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 text-center;
+        }
+
+        .card {
+            @apply bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300;
+        }
+
+        .tag {
+            @apply inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Shobika K</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition">Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Projects</a>
+            <a href="#experience" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Experience</a>
+            <a href="#skills" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Me Section -->
+        <section id="about" class="text-center mb-24">
+            <img src="https://placehold.co/128x128/E0E7FF/4F46E5?text=SK" alt="Shobika K"
+                class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Shobika K</h1>
+            <p class="text-lg text-blue-700 font-semibold mb-6">B.Tech Artificial Intelligence & Data Science Student
+            </p>
+
+
+            <div class="mt-8">
+                <h3 class="font-semibold text-lg mb-3">Interests:</h3>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="tag">Artificial Intelligence</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Embedded Systems</span>
+                    <span class="tag">App Development</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24">
+            <h2 class="section-title"> Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Powered Traffic Congestion Control</h3>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">🏆
+                                1st Prize</span>
+                        </div>
+                        <p class="mb-4">Designed an AI system to detect and predict real-time traffic congestion using
+                            YOLO for vehicle detection and Streamlit for a live dashboard.</p>
+                        <p class="font-semibold mb-2">Features:</p>
+                        <ul class="list-disc list-inside mb-4 text-sm">
+                            <li>Automatic congestion scoring</li>
+                            <li>Adaptive signal timing recommendation</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Python</span><span class="tag">YOLOv8</span><span
+                                class="tag">OpenCV</span><span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Career Guidance Chatbot</h3>
+                        <p class="mb-4">Developed an interactive chatbot that provides AI-driven career suggestions
+                            based on user inputs like interests, skills, and goals.</p>
+                        <p class="font-semibold mb-2">Outcome:</p>
+                        <p class="text-sm mb-4">Helps students and professionals make informed career decisions.</p>
+                        <div>
+                            <span class="tag">Python</span><span class="tag">LLM</span><span
+                                class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Android Vehicle Telemetry App</h3>
+                        <p class="mb-4">Created an Android app that visualizes real-time vehicle data such as speed,
+                            fuel level, and location using Firebase as the backend.</p>
+                        <p class="font-semibold mb-2">Features:</p>
+                        <ul class="list-disc list-inside mb-4 text-sm">
+                            <li>Map integration & live data sync</li>
+                            <li>Altair-based charts</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Android Studio</span><span class="tag">Firebase</span><span
+                                class="tag">Python</span><span class="tag">Altair</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Race Track Optimization</h3>
+                        <p class="mb-4">Applied graph theory algorithms to find the most efficient racing paths and
+                            analyze lap times to improve efficiency for Team ReNew’s vehicle.</p>
+                        <p class="font-semibold mb-2">Impact:</p>
+                        <p class="text-sm mb-4">Helped improve lap efficiency for Team ReNew’s hydrogen-powered vehicle.
+                        </p>
+                        <div>
+                            <span class="tag">Python</span><span class="tag">NetworkX</span><span
+                                class="tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Monthly Budget Manager (UI/UX)</h3>
+                        <p class="mb-4">Designed a mobile app interface to help users manage expenses through
+                            category-based tracking and visual summaries.</p>
+                        <p class="font-semibold mb-2">Focus:</p>
+                        <ul class="list-disc list-inside mb-4 text-sm">
+                            <li>Minimal design & easy user flow</li>
+                            <li>Responsive components</li>
+                        </ul>
+                        <div>
+                            <span class="tag">Figma</span><span class="tag">React Native</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-24">
+            <h2 class="section-title">Experience & Activities</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Internships -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Internships</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg">Labmentix – Data Analytics Intern</h4>
+                            <p class="text-sm text-gray-500 mb-2">(1 Month)</p>
+                            <ul class="list-disc list-inside text-sm">
+                                <li>Performed exploratory data analysis and visualization.</li>
+                                <li>Gained experience in Pandas, NumPy, and Matplotlib.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg">AICTE Internships</h4>
+                            <p class="text-sm text-gray-500 mb-2">(Data Science Master & App Development)</p>
+                            <ul class="list-disc list-inside text-sm">
+                                <li>Worked on projects involving preprocessing & model development.</li>
+                                <li>Integrated models with mobile applications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team & Events -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Team & Event Participation</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg">Team ReNew – Embedded and Software Member</h4>
+                            <p class="text-sm mb-2">Working on integrating AI with vehicle control systems for the Shell
+                                Eco-marathon hydrogen fuel cell vehicle.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg">Shell Eco-marathon 2025 (Qatar)</h4>
+                            <p class="text-sm mb-2">Participated in the Hydrogen Fuel Cell Category, contributing to
+                                data acquisition and optimization strategies for vehicle performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="mb-24">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">Programming</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Arduino IDE</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">AI/ML Tools</h4>
+                        <ul>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>OpenCV</li>
+                            <li>Scikit-learn</li>
+                            <li>YOLO</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">Data Tools</h4>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">Development</h4>
+                        <ul>
+                            <li>Android Studio</li>
+                            <li>Streamlit</li>
+                            <li>Git</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">App Development</h4>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">UI/UX</h4>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="mb-24">
+            <h2 class="section-title"> Awards & Achievements</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md">
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-yellow-500 text-2xl">1.</span>
+                        <p><span class="font-semibold">1st Prize</span> – KPR Hackathon 2025 (AI Traffic Congestion
+                            Prediction)</p>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-yellow-500 text-2xl">2.</span>
+                        <p><span class="font-semibold">MGM Award</span> – College Recognition for Innovation</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2 class="section-title">🔗 Contact & Links</h2>
+            <p class="max-w-xl mx-auto mb-8">Feel free to reach out for collaborations, internships, or just a chat
+                about tech!</p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:shobika.23ad@kct.ac.in"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-10 h-10 mb-2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+                <a href="https://github.com/shobika113" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-10 h-10 mb-2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="http://www.linkedin.com/in/shobika-kani-pandi" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300 flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-10 h-10 mb-2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-24">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Shobika K. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let i = 0; i < mobileMenuLinks.length; i++) {
+            mobileMenuLinks[i].addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>
